@@ -15,7 +15,7 @@ export default function Header () {
         <header className="px-4">
             <nav className="navbar navbar-expand-sm border-bottom row my-1">
                 <div className="d-flex justify-content-between col-sm-4 ms-3">
-                    <a href="#" className="navbar-brand d-flex align-items-center">JS Band Store / Vlad Šalimov</a>
+                    <a href="https://github.com/wladsz/prometheus-x-course-task" className="navbar-brand d-flex align-items-center">JS Band Store / Vlad Šalimov</a>
                     <button
                         className="navbar-toggler"
                         type="button"
