@@ -72,12 +72,12 @@ export default function Cart () {
                                 );
                             })}
                         </ul>
-                        <p className="fw-bold text-end">Total price, $<span>{total}</span></p>
+                        <p className="fw-bold text-end">Total price, $<span>{total.toFixed(2)}</span></p>
                     </>
                     :
                     <div className="d-flex justify-content-center align-items-center h-100 text-center">
                         <div>
-                            <img src="./img/cart.svg" alt="empty cart" id="cart-image" />
+                            <img src={process.env.PUBLIC_URL + "/img/cart.svg"} alt="empty cart" id="cart-image" />
                             <p>Cart is empty</p>
                         </div>
                     </div>

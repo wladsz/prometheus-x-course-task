@@ -18,7 +18,7 @@ export default function SpecificBook () {
         let updatedCart;
         if (cart.find(item => item.id === id)) {
             updatedCart = cart.map(item => {
-                return item.id === id ? {...item, count: count} : item;
+                return item.id === id ? {...item, count: count, totalBookPrice: totalPrice} : item;
             })
         } else {
             updatedCart = [...cart, {id: id, title: book.title, count: count, price: book.price, totalBookPrice: totalPrice}];
