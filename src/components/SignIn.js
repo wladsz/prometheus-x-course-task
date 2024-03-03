@@ -22,7 +22,7 @@ export default function SignIn () {
 
     return (
         <div id="signin" className="d-flex flex-column align-items-center mt-5">
-            <img src="../img/avatar.png" alt="avatar logo" className="border rounded-circle"/>
+            <img src={process.env.PUBLIC_URL + "/img/avatar.png"} alt="avatar logo" className="border rounded-circle"/>
             <form onSubmit={handleSubmit} className="d-flex flex-column align-items-center row">
                 <p className="col-6 my-3">Username</p>
                 <input

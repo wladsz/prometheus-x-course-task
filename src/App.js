@@ -12,7 +12,7 @@ export default function App() {
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) || []);
 
   useEffect(() => {
-    fetch('../books.json')
+    fetch(process.env.PUBLIC_URL + '/books.json')
       .then((response) => response.json())
       .then((obj) => setBooks(Object.values(obj)[0]));
   }, []);

@@ -46,7 +46,7 @@ export default function SpecificBook () {
         <section className="px-4 py-2">
             <div className="row row-cols-1 row-cols-md-3" id={bookId}>
                 <div className="_book-image col-sm-6 col-md-4 col-xl-3 order-1">
-                    <img src={book.image !== "" ? book.image : '../img/imageNotFound.png'} alt="book cover" />
+                    <img src={book.image !== "" ? book.image : process.env.PUBLIC_URL + '/img/imageNotFound.png'} alt="book cover" />
                 </div>
                 <div className="col-sm-6 col-md-4 col-xl-6 order-2">
                     <h2>{book.title}</h2>

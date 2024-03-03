@@ -10,7 +10,7 @@ function Book ({book}) {
         <div className="col">
             <div className="_book card mx-auto my-2">
                 <div className="_book-image mx-auto my-auto">
-                    <img src={image !== "" ? image : '../img/imageNotFound.png'} alt="book cover" className="m-2"/>
+                    <img src={image !== "" ? image : process.env.PUBLIC_URL + '/img/imageNotFound.png'} alt="book cover" className="m-2"/>
                 </div>
                 <div className="card-body">
                     <p className="card-title fw-bold text-truncate">{title}</p>

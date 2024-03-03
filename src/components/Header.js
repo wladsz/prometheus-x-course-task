@@ -33,7 +33,7 @@ export default function Header () {
                         <ul className="navbar-nav d-flex align-items-center">
                             <li className="nav-item mx-1">
                                 <Link to="/cart" >
-                                    <img src="../img/cart.svg" alt="cart" id="cart-icon"/>
+                                    <img src={process.env.PUBLIC_URL + "/img/cart.svg"} alt="cart" id="cart-icon"/>
                                 </Link>
                             </li>
                             <li className="nav-item mx-1">
@@ -44,7 +44,7 @@ export default function Header () {
                                     Sign out
                                 </button>
                             </li>
-                            <img src="../img/avatar.png" alt="avatar" id="avatar" className="border rounded-circle mx-1"/>
+                            <img src={process.env.PUBLIC_URL + "/img/avatar.png"} alt="avatar" id="avatar" className="border rounded-circle mx-1"/>
                             <span className="mx-1 fw-bold">{user}</span>
                         </ul>
                     : null}

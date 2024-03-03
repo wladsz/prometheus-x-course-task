@@ -64,7 +64,7 @@ export default function Cart () {
                                                 id="cart-delete-item"
                                                 onClick={() => deleteItem(id)}
                                             >
-                                                <img src="../img/trash.svg" alt="delete item"/>
+                                                <img src={process.env.PUBLIC_URL + "/img/trash.svg"} alt="delete item"/>
                                             </span>
                                             <span className="d-inline-block col-6 align-top">${totalBookPrice.toFixed(2)}</span>
                                         </div>
